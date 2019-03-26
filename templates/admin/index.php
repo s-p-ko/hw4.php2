@@ -8,13 +8,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Admin panel</title>
 </head>
+<body>
 <h1>Admin panel</h1>
 <div>
     <h3><a href="/">Return to the Main page</a></h3>
 </div>
 <div>
     <h2>Create a new Article</h2>
-        <form action="/?ctrl=admin/add" method="post">
+        <form action="/admin/add" method="post">
             <p>Title</p>
             <input type="text" size="60" maxlength="250" name="title">
             <p>Content</p>
@@ -34,10 +35,10 @@
                 <p><b>Author: <?php echo $article->author->name; ?></b></p>
             <?php endif; ?>
             <br>
-            <a href="/?ctrl=admin/edit&id=<?php echo
-            $article->id;?>"><button>Edit article</button></a>
-            <a href="/?ctrl=admin/delete&id=<?php echo
-            $article->id;?>"><button>Delete article</button></a>
+            <a href="/admin/edit/<?php echo $article->id;?>">
+                <button>Edit article</button></a>
+            <a href="/admin/delete/<?php echo $article->id;?>">
+                <button>Delete article</button></a>
         </article>
         <hr>
     <?php endforeach; ?>
