@@ -7,7 +7,6 @@ abstract class Controller
     protected $data = [];
 
     use MagicTrait, IteratorTrait, CountableTrait;
-
     /**
      * Controller constructor.
      */
