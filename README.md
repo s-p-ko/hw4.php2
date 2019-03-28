@@ -23,3 +23,18 @@ Lesson #4
 4. Подумайте - не сделать ли для админ-панели другую точку входа? А может быть другой базовый контроллер? Если решите, что это обоснованно - сделайте.
 
 5.* Создайте систему ЧПУ. Адрес вида /XXX/YYY/ZZZ должен транслироваться в контроллер XXX\YYY (вложенность пространств имен неограничена) и действие ZZZ
+
+
+Настройки в Nginx_1.14_vhost.conf
+
+    location / {
+        root       "%hostdir%";
+        index      index.php;
+        try_files $uri $uri/ /index.php$args;
+    }
+    
+    # admin links
+    location /admin {
+     try_files $uri $uri/ /admin/index.php$args;
+    } 
+    
