@@ -1,6 +1,11 @@
 <?php
+
 namespace App;
 
+/**
+ * Class Db
+ * @package App
+ */
 class Db
 {
     protected $dbh;
@@ -26,8 +31,7 @@ class Db
      * @param string $class
      * @return array
      */
-    public function query(string $sql, array $params = [], string $class =
-    null) : array
+    public function query(string $sql, array $params = [], string $class = null): array
     {
         $sth = $this->dbh->prepare($sql);
         $sth->execute($params);
@@ -43,7 +47,7 @@ class Db
      * @param array $params
      * @return bool
      */
-    public function execute(string $sql, array $params = []) : bool
+    public function execute(string $sql, array $params = []): bool
     {
         return $this->dbh->prepare($sql)->execute($params);
     }

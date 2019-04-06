@@ -5,9 +5,11 @@ Start on the 4th of March 2019.
 Lesson #4 
 
 Домашнее задание №4
+
 Важно! Для проверяющего:
 
-Выполнение п.3 смотреть здесь https://github.com/s-p-ko/hw4.php2/tree/938714970acc3d12435ad7bedf9afa92a5d3bc28
+Смотреть выполнение п.3  здесь https://github.com/s-p-ko/hw4
+.php2/tree/938714970acc3d12435ad7bedf9afa92a5d3bc28
 
 Вся работа https://github.com/s-p-ko/hw4.php2
 

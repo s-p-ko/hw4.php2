@@ -1,27 +1,33 @@
 <?php
+
 namespace App;
 
+/**
+ * Class Controller
+ * @package App
+ */
 abstract class Controller
 {
     protected $view;
-   
+
     use MagicTrait;
+
     /**
      * Controller constructor.
      */
     public function __construct()
     {
-        $this->view  = new View();
+        $this->view = new View();
     }
 
     /**
-     * @return bool
+     * @param string $path
      */
-    protected function access() : bool
+    protected static function redirect(string $path)
     {
-        return true;
+        header('Location: ' . $path);
+        exit;
     }
-
 
     /**
      * @return mixed
@@ -35,12 +41,11 @@ abstract class Controller
     }
 
     /**
-     * @param string $path
+     * @return bool
      */
-    protected static function redirect(string $path)
+    protected function access(): bool
     {
-        header('Location: ' . $path);
-        exit;
+        return true;
     }
 
     /**

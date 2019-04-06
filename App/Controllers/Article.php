@@ -1,11 +1,20 @@
 <?php
+
 namespace App\Controllers;
 
 use App\Controller;
 use App\Models\Article as ArticleModel;
 
+/**
+ * Class Article
+ * @package App\Controllers
+ */
 class Article extends Controller
 {
+    /**
+     * @return void
+     * @throws \App\Exceptions\DbException
+     */
     public function handle()
     {
         $id = $this->data['data'];
