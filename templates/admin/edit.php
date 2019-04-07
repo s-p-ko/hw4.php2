@@ -28,7 +28,7 @@
     <button formaction="/admin/add" type="submit">
         Save as new article
     </button>
-    <button formaction="/admin/canceled" type="submit">
+    <button formaction="/admin/cancel" type="submit">
         Cancel
     </button>
 </form>
