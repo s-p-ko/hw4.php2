@@ -13,7 +13,6 @@ class Edit extends Controller
 {
     /**
      * @return void
-     * @throws \App\Exceptions\DbException
      */
     protected function handle()
     {

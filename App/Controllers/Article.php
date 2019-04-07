@@ -13,7 +13,6 @@ class Article extends Controller
 {
     /**
      * @return void
-     * @throws \App\Exceptions\DbException
      */
     public function handle()
     {

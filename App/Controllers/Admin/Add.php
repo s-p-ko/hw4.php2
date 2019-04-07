@@ -13,7 +13,6 @@ class Add extends Controller
 {
     /**
      * @return void
-     * @throws \App\Exceptions\DbException
      */
     function handle()
     {
