@@ -12,7 +12,7 @@ use App\Models\Article;
 class Index extends Controller
 {
     /**
-     * @return mixed|void
+     * @return void
      * @throws \App\Exceptions\DbException
      */
     protected function handle()
