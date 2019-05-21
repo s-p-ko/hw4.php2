@@ -16,7 +16,7 @@ class Article extends Controller
      */
     public function handle()
     {
-        $id = $this->data['data'];
+        $id = $this->data['prop'];
         $this->view->article = ArticleModel::findById($id);
         $this->view->display(__DIR__ . '/../../templates/article.php');
     }

@@ -22,6 +22,6 @@ class Rewrite extends Controller
             $article->content = $_POST['content'];
             $article->save();
         }
-        static::redirect('/admin');
+        $this->redirect('/admin');
     }
 }
